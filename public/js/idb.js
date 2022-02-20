@@ -11,7 +11,7 @@ request.onsuccess = function (event) {
   db = event.target.result;
 
   if (navigator.onLine) {
-    // uploadBudget();
+    uploadBudget();
   }
 };
 
@@ -26,4 +26,13 @@ function saveRecord(record) {
 
   // add record to your store with add method
   budgetObjectStore.add(record);
+}
+
+function uploadBudget() {
+  const transaction = db.transaction(['new_budget'], 'readwrite');
+
+  const budgetObjectStore = transaction.objectStore('new_budget');
+
+  const getAll = budgetObjectStore.getAll();
+
 }
