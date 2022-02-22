@@ -46,7 +46,7 @@ It is open to the public, so feel free to use it if you'd like.
 https://stormy-shore-50944.herokuapp.com/
  
  ## Image
-![](/public/assets/images/finalScreenShot.png)
+![](/public/assets/images/BudgetTrackerScreenshot.png)
 
  ## Contributions
 
